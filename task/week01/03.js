@@ -57,4 +57,7 @@ console.log(safeProp('name')(user).map(ex3));
 
 
 //练习4
-
+let ex4 = function (n) {
+    return Maybe.of(n).map(parseInt)._value;
+};
+console.log(ex4());
